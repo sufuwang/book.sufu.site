@@ -9,13 +9,14 @@ const sidebar = {
       children: [
         { text: '2022', link: '/target/2022' },
       ]
-    }, {
-      text: '文章',
-      link: '/article/index.html',
-      children: [
-        { text: '2022', link: '/article/2022' },
-      ]
     },
+    // {
+    //   text: '文章',
+    //   link: '/article/index.html',
+    //   children: [
+    //     { text: '2022', link: '/article/2022' },
+    //   ]
+    // },
   ]
 }
 
