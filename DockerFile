@@ -1,8 +1,0 @@
-FROM nginx
-
-WORKDIR /usr/share/nginx/html
-COPY ./docs/.vitepress/dist .
-
-RUN ls
-
-EXPOSE 80
