@@ -27,7 +27,7 @@ interface TypeConfig {
 
 // https://github.com/vuejs/vitepress/blob/main/src/node/config.ts#L15
 const config: TypeConfig = {
-  base: 'book',
+  base: '/book',
   themeConfig: {
     sidebar,
   },
