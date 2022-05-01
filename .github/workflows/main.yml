@@ -21,6 +21,8 @@ jobs:
 
       - name: 执行脚本
         run: |
+          npm i
+          npm run build
           rm -rf ./dist.sufu.site/book
           cp -r ./docs/.vitepress/dist/ ./dist.sufu.site/book
           ls
@@ -30,6 +32,7 @@ jobs:
           cd ./dist.sufu.site
           ls
           git config --global user.email "1137120948@qq.com"
+          git config --global user.name "sufuwang"
           git add .
           git commit -m 'feat: 更新 book 子库'
           git push
