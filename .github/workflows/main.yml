@@ -21,7 +21,14 @@ jobs:
 
       - name: 执行脚本
         run: |
-          ls
           rm -rf ./dist.sufu.site/book
           cp -r ./docs/.vitepress/dist/ ./dist.sufu.site/book
           ls
+      
+      - name: 推入 dist 仓库
+        run: |
+          cd ./dist.sufu.site
+          ls
+          git add .
+          git commit -m 'feat: 更新 book 子库'
+          git push
