@@ -29,6 +29,7 @@ jobs:
         run: |
           cd ./dist.sufu.site
           ls
+          git config --global user.email "1137120948@qq.com"
           git add .
           git commit -m 'feat: 更新 book 子库'
           git push
