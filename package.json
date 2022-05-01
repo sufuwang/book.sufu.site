@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "yarn run docs:dev",
-    "build": "chmod 777 ./build.sh && ./build.sh",
+    "build": "yarn run docs:build",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
