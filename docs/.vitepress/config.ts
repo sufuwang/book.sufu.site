@@ -1,4 +1,5 @@
 import { UserConfig } from 'vite'
+import type { SiteData } from 'vitepress'
 
 const sidebar = {
   '/': [
@@ -20,13 +21,9 @@ const sidebar = {
   ]
 }
 
-interface TypeConfig {
-  vite?: UserConfig
-  [key: string]: any
-}
-
 // https://github.com/vuejs/vitepress/blob/main/src/node/config.ts#L15
-const config: TypeConfig = {
+const config: Partial<SiteData> = {
+  base: '/book/',
   themeConfig: {
     sidebar,
   },
