@@ -23,7 +23,6 @@ const sidebar = {
 
 // https://github.com/vuejs/vitepress/blob/main/src/node/config.ts#L15
 const config: Partial<SiteData> = {
-  base: '/book/',
   themeConfig: {
     sidebar,
   },
