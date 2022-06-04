@@ -2,7 +2,7 @@
   <div class="slotContainer">
     <span class="slot"><slot></slot></span>
     <span>
-        <StarFilledIcon v-for="_ in startCount" class="startIcon" style="color: red" />
+      <StarFilledIcon v-for="_ in startCount" :key="_" class="startIcon" style="color: red" />
     </span>
   </div>
 </template>
