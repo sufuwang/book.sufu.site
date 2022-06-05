@@ -17,6 +17,7 @@ export default defineConfig({
     autoImport({
       resolvers: [TDesignResolver({
         library: 'vue-next',
+        resolveIcons: true
       })],
       dts: false
     }),
