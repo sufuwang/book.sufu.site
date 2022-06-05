@@ -17,13 +17,12 @@ export default defineConfig({
     autoImport({
       resolvers: [TDesignResolver({
         library: 'vue-next',
-        resolveIcons: true
       })],
       dts: false
     }),
     components({
       resolvers: [TDesignResolver({
-        library: 'vue-next'
+        library: 'vue-next',
       })],
     }),
   ],

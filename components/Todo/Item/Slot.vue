@@ -8,6 +8,7 @@
 </template>
 <script lang="ts" setup>
 import { computed } from 'vue'
+import { StarFilledIcon } from 'tdesign-icons-vue-next'
 
 interface TypeItemProps {
   isBold?: boolean
