@@ -1,4 +1,4 @@
-import type { SiteData, UserConfig } from 'vitepress'
+import type { UserConfig } from 'vitepress'
 
 const sidebar = {
   '/': [

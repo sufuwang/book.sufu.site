@@ -16,8 +16,9 @@ export default defineConfig({
     vueJsx({}),
     autoImport({
       resolvers: [TDesignResolver({
-        library: 'vue-next'
+        library: 'vue-next',
       })],
+      dts: false
     }),
     components({
       resolvers: [TDesignResolver({
