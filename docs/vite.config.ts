@@ -1,8 +1,8 @@
 import path from 'path'
 import { defineConfig } from 'vite'
 import vueJsx from '@vitejs/plugin-vue-jsx'
-import AutoImport from 'unplugin-auto-import/vite';
-import Components from 'unplugin-vue-components/vite';
+import autoImport from 'unplugin-auto-import/vite';
+import components from 'unplugin-vue-components/vite';
 import { TDesignResolver } from 'unplugin-vue-components/resolvers';
 
 export default defineConfig({
@@ -14,12 +14,12 @@ export default defineConfig({
   },
   plugins: [
     vueJsx({}),
-    AutoImport({
+    autoImport({
       resolvers: [TDesignResolver({
         library: 'vue-next'
       })],
     }),
-    Components({
+    components({
       resolvers: [TDesignResolver({
         library: 'vue-next'
       })],

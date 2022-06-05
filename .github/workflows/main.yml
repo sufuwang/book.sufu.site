@@ -8,6 +8,11 @@ jobs:
   Main:
     runs-on: ubuntu-latest
     steps:
+      - name: 修改版本
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.17.3
+
       - name: 获取主库源码
         uses: actions/checkout@v2
 
@@ -21,7 +26,8 @@ jobs:
 
       - name: 执行脚本
         run: |
-          npm i
+          node -v
+          yarn
           npm run build
           rm -rf ./dist.sufu.site/book
           cp -r ./docs/.vitepress/dist/ ./dist.sufu.site/book
